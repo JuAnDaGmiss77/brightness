@@ -11,11 +11,11 @@ def set_brightness(brightness):
     pythoncom.CoUninitialize()
 
 def on_key_press(event):
-    if event.name == 'q' and keyboard.is_pressed('ctrl'):
-        set_brightness(8)
+    if event.name == ',' and keyboard.is_pressed('ctrl'):
+        set_brightness(5)
 
-    if event.name == 'ñ' and keyboard.is_pressed('ctrl'):
+    if event.name == '.' and keyboard.is_pressed('ctrl'):
         set_brightness(100)
 
 keyboard.on_press(on_key_press)
-keyboard.wait('esc')  # Espera hasta que se presione la tecla 'Esc'
+keyboard.wait('esc')
