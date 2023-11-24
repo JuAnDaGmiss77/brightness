@@ -1,3 +1,3 @@
 @echo off
 call venv\Scripts\activate
-python script.py
+start "WindowBrightness" /B python script.py

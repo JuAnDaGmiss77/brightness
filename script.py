@@ -12,7 +12,7 @@ def set_brightness(brightness):
 
 def on_key_press(event):
     if event.name == ',' and keyboard.is_pressed('ctrl'):
-        set_brightness(5)
+        set_brightness(10)
 
     if event.name == '.' and keyboard.is_pressed('ctrl'):
         set_brightness(100)
